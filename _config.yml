@@ -1,7 +1,7 @@
 # Site settings
 title: slim
 baseurl: "/slim"
-url: "http://syaningv.com"
+url: "http://syaning.com"
 
 # Build settings
 markdown: redcarpet
@@ -10,6 +10,6 @@ redcarpet:
 permalink: pretty
 
 # Third-party services
-# If you donot want to use anyone, just leave it empty
+# just leave someone empty to disable it
 google_analytics: 
 disqus_shortname: 
