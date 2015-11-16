@@ -1,1 +1,1 @@
-slim is just a slim jekyll theme. [Demo](http://syaningv.com/slim).
+slim is just a slim jekyll theme. [Demo](http://syaning.com/slim).
