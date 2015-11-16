@@ -1,0 +1,15 @@
+# Site settings
+title: slim
+baseurl: "/slim"
+url: "http://syaningv.com"
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink: pretty
+
+# Third-party services
+# If you donot want to use anyone, just leave it empty
+google_analytics: 
+disqus_shortname: 

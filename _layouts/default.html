@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </header>
+    <div class="page-content">
+      {{ content }}
+    </div>
+    {% include ga.html %}
+  </body>
+</html>
