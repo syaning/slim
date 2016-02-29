@@ -4,9 +4,8 @@ baseurl: "/slim"
 url: "http://syaning.com"
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+kramdown:
+  input: GFM
 permalink: pretty
 
 # Third-party services
