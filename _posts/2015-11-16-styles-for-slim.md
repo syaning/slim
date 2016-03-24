@@ -13,10 +13,15 @@ Now, let's have a glance at the basic styles: [link](http://github.com/syaning/v
 <hr>
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
+
 #### Header 4
+
 ##### Header 5
+
 ###### Header 6
 
 - list item 1
