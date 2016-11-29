@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
+  <head>
     <header class="site-header">
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </header>
-    <!-- {% include links.html %} -->
+  </head>
+  {% include head.html %}
+  <body>
     {% include header.html %}
+    <!-- {% include links.html %} -->
     <div class="page-content">
       {{ content }}
     </div>
