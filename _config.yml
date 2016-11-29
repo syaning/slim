@@ -8,6 +8,10 @@ kramdown:
   input: GFM
 permalink: pretty
 
+links:
+	- name: About
+	  url:	/about
+
 # Third-party services
 # just leave someone empty to disable it
 google_analytics: 
