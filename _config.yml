@@ -1,6 +1,6 @@
 # Site settings
 title: anerdi
-baseurl: "/aboutme"
+# baseurl: "/aboutme"
 url: "http://anerdi.ca"
 
 # Build settings
