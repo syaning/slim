@@ -1,18 +1,26 @@
 # Site settings
 title: anerdi
-# baseurl: "/aboutme"
+baseurl: ""
 url: "http://anerdi.ca"
 
 # Build settings
 kramdown:
   input: GFM
+  hard_wrap: false
 permalink: pretty
+highlighter: pygments
 
 links:
-	- name: About
-	  url:	/about
+  - name:         About
+    url:          /about
+  - name:         Blog
+    url:          http://muan.co
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/muan
+    external:     true
 
 # Third-party services
 # just leave someone empty to disable it
-google_analytics: 
-disqus_shortname: 
+google_analytics:
+disqus_shortname:
