@@ -10,15 +10,6 @@ kramdown:
 permalink: pretty
 highlighter: pygments
 
-links:
-  - name:         About
-    url:          /about
-  - name:         Blog
-    url:          http://muan.co
-    external:     true
-  - name:         GitHub
-    url:          http://github.com/muan
-    external:     true
 
 # Third-party services
 # just leave someone empty to disable it
