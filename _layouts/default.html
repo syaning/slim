@@ -1,13 +1,11 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" type="image/png" href="images/fav.png">
+    {% include head.html %}
     <header class="site-header">
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
       {% include header.html %}
     </header>
   </head>
-  {% include head.html %}
   <body>
     <div class="page-content">
       {{ content }}
