@@ -9,6 +9,6 @@ kramdown:
 permalink: pretty
 
 # Third-party services
-# just leave someone empty to disable it
+# just leave blank to disable it
 google_analytics: 
 disqus_shortname: 
