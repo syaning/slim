@@ -5,7 +5,7 @@ title:  Archives
 <ul class="post-list">
 	{% for post in site.posts %}
 	<li>
-		<span>{{ post.date | date: "%b %d, %Y" }}</span>
+		<time>{{ post.date | date: "%b %d, %Y" }}</time>
 		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</li>
 	{% endfor %}
