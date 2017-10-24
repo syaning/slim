@@ -1,6 +1,7 @@
 ---
 layout: page
 title: français
+permalink: anerdi.ca/francais/
 ---
 
 Salut toute le monde ! J'aime bien apprendre le français par regarder des films.
@@ -15,4 +16,4 @@ Pour tous ces films, on peux regarder avec les sous-titres [cc] qu'ils vont bien
 ensemble avec les voix. J'ai hâte de voir la film prochaine qui sera la sorte
 << versionne Française Canadienne >> dans Netflix.
 
-Comme si de rien n'était...
+Comme si de rien n'était... blab
