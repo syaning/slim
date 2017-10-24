@@ -1,7 +1,6 @@
 ---
 layout: page
 title: français
-permalink: anerdi.ca/francais/
 ---
 
 Salut toute le monde ! J'aime bien apprendre le français par regarder des films.
