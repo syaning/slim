@@ -1,4 +1,4 @@
 ---
 layout: page
-title: CV
+title: curriculum_vitae
 ---

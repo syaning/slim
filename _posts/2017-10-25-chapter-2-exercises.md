@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "Chapter 2 Notes & Exercises"
-date: 2017-10-21
+title:  "ch2_exercises"
+date: 2017-10-26
 categories: fpscala
 ---
-
-#### NOTES
-
-#### EXERCISES
-
 ```scala
 // Exercise 1: Write a function to compute the nth fibonacci number
 
@@ -104,5 +99,13 @@ where \\(g(a)\\) represents some function from `B` to `C`.
 f(a) = g(h(a)),
 \\]
 where \\(g(\cdot)\\) and \\(h(\cdot)\\) are valid mathematical functions.
+
+```scala
+// Exercise 4: Implement `uncurry`
+def uncurry[A,B,C](f: A => B => C): (A, B) => C = {
+  (a:A, b:B) => f(a)(b)
+  // this is so dam cool!
+}
+```
 
 \\(\blacksquare\\)
