@@ -2,11 +2,12 @@
 layout: post
 title:  "ch2_exercises"
 date: 2017-10-26
+comments: true
 categories: fpscala
 ---
+**<span style="font-size:larger;">Exercise 1.</span>**
+Write a function to compute the nth fibonacci number
 ```scala
-// Exercise 1: Write a function to compute the nth fibonacci number
-
 def fib(n: Int): Int ={
   def go(m:Int, prev1: Int, prev2: Int): Int =
     // this "loop" increments m by 1 until it hits n
@@ -30,11 +31,11 @@ for writing the local tail-recursive function. Instead, I had to think about
 a helper function which takes three arguments, namely: an incrementing variable `m` as well as
 two other variables that give the previous two numbers of the Fibonacci
 sequence.
+\\(\blacksquare\\)
 
-
+**<span style="font-size:larger;">Exercise 2.</span>**
+Implement a polymorphic function to check whether an `Array[A]` is sorted
 ```scala
-// Exercise 2: Implement a polymorphic function to check whether
-// an `Array[A]` is sorted
 def isSorted[A](as: Array[A], gt: (A,A) => Boolean): Boolean = {
   def go(m: Int): Boolean =
     if (m == as.length) true
@@ -52,9 +53,11 @@ isSorted(arr1, (x:Int, y:Int) => (x>y))
 val arr2 = Array('b','a','c')
 isSorted(arr2, (x:Char, y:Char) => (x>y))
 ```
+\\(\blacksquare\\)
 
+**<span style="font-size:larger;">Exercise 3.</span>**
+Implement partial
 ```scala
-// Exercise 3: Implement partial
 def partial[A,B,C](a: A, f: (A,B) => C): B => C = {
   b: B => f(a,b)
 }
@@ -65,10 +68,11 @@ partial(3, (a:Int, b:Int) => a*b )
 ```
 **Some Notes:**
 This is the only implementation that compiles; must use an anonymous function.
+\\(\blacksquare\\)
 
+**<span style="font-size:larger;">Exercise 4.</span>**
+Implement `curry`
 ```scala
-// Exercise 4: Implement `curry`.
-
 // Note that `=>` associates to the right, so we could
 // write the return type as `A => B => C`
 def curry[A,B,C](f: (A, B) => C): A => (B => C) = {
@@ -99,13 +103,13 @@ where \\(g(a)\\) represents some function from `B` to `C`.
 f(a) = g(h(a)),
 \\]
 where \\(g(\cdot)\\) and \\(h(\cdot)\\) are valid mathematical functions.
+\\(\blacksquare\\)
 
+**<span style="font-size:larger;">Exercise 5.</span>**
+Implement `uncurry`
 ```scala
-// Exercise 4: Implement `uncurry`
 def uncurry[A,B,C](f: A => B => C): (A, B) => C = {
   (a:A, b:B) => f(a)(b)
   // this is so dam cool!
 }
 ```
-
-\\(\blacksquare\\)
