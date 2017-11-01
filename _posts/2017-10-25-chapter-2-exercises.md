@@ -113,3 +113,17 @@ def uncurry[A,B,C](f: A => B => C): (A, B) => C = {
   // this is so dam cool!
 }
 ```
+\\(\blacksquare\\)
+
+**<span style="font-size:larger;">Exercise 6.</span>**
+Implement function composition.
+```scala
+def compose[A,B,C](f: B => C, g: A => B): A => C = {
+  (a: A) => f(g(a))
+}
+
+// Example
+val fog = compose((x:Int) => x/2, (x:Int) => x*2)
+fog(3)
+```
+\\(\blacksquare\\)
