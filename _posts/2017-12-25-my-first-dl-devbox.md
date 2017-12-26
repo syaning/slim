@@ -5,9 +5,9 @@ date: 2017-12-25
 comments: true
 categories: misc
 ---
-After a "2018 vision" exercise at work, I decided that I would up my game in
-deep/reinforcement learning research and implementation for the next year.
-And, in light of this, I thought it'd be best to have my very own development box.
+I recently decided that my 2018 New Years resolution would be to up my game in
+deep/reinforcement learning research and implementation. And after lots of research
+and pondering, I concluded that it'd be best to have my very own development box.
 Having never built a computer ever in my life before, this exercise was filled with all
 sorts of emotions, such as excitement, anxiety, stress (e.g., don't f**k this up),
 and pure joy! But at the end of the day, I can honestly say that this has been
@@ -51,27 +51,27 @@ my best friend, Lorenzo; BUT, he never built a computer before either, so there'
 
 ![example]({{site.url}}/images/final.jpg)
 
-#### Some difficulties we experienced...
-Here is a list of some of the difficulties we experienced during the build
+#### Some difficulties we encountered...
+Here is a list of some of the difficulties we encountered during the build
 process:
-1. Massive amount of cables -- e.g., figuring out where to plug in the SATA/power cables
-to the power supply took some time.
+1. Massive amount of cables -- e.g., figuring out what a SATA power cable is (lol)
+and where all the components connect.
 2. When it came to powering on the machine, everything was working but we were
 getting an error message saying to plug the GPU into a power supply. Not sure if
 this applies to all NVIDIA GPUs, but the ASUS ROG Strix comes with two auxiliary
 power supplies. Initially we only had one power supply connected, but after connecting
 the other one, the error message went away.
 3. One of the four memory chips were not set in place properly. During initial boot,
-the motherboard was only saying there 24GB of RAM. We fixed this by finding the culprit
+the motherboard was only recognizing 24GB of the 32GB total RAM. We fixed this by finding the culprit
 memory chip and reinstalling it.
 
 **Total Build Time:** Aproximately 5 hours with a 30 minute pizza/beer break (I think that's pretty good
 for a couple of noobies -- I wonder how long this would have taken without the
-ability to look things up in the internet!)
+ability to look things up on the internet!)
 
 ### Installing Ubuntu 16.0.4
 I opted to install Ubuntu 16.0.4 after some research, where I found out about LTS
-versions. Also, the guide for installing CUDA on my machine was also
+versions. Also, the guide for installing the CUDA toolkit, which I plan to follow, is also
 based on Ubuntu 16.0.4. I've installed Ubuntu just one time before this, but
 after seeing both the black/purple screen of deaths, I was quickly reminded of the
 pain & struggles I went through the first time. In total, it took me about 1.5 hours
@@ -86,12 +86,15 @@ reboot into the GRUB menu (by holding "SHIFT" during initial boot), and follow t
 steps listed [here](https://askubuntu.com/questions/760934/graphics-issues-after-while-installing-ubuntu-16-04-16-10-with-nvidia-graphics) under 3. I then followed steps 1. and 2. in that same link to
 install the correct NVIDIA drivers (note that I installed `nvidia-381`).
 
-Also want to note that I installed Ubuntu onto my SSD and am just using the HDD
-(after formatting) for file storage. Not sure if this is the best setup, I have
-come across some more complicated boot setups, but I opted for the most basic one
-for now.
+I also want to mention that I installed Ubuntu onto my SSD and am just using the HDD
+([after formatting](https://www.wikihow.com/Format-a-Hard-Drive-Using-Ubuntu#/Image:Format-a-Hard-Drive-Using-Ubuntu-Step-6-Version-3.jpg))
+for file storage. Not sure if this is the best setup (I did
+come across some more complicated boot setups), but I opted for the most basic one
+for now. Finally, I did also experience scratchy/distorted sound at first, but
+I followed the steps listed in this [Ubuntu wiki](https://help.ubuntu.com/community/SoundTroubleshootingProcedure) and that
+solved my sound problems!
 
 ### What's Next
-1. Instal CUDA toolkit and other tools for deep learning. I will follow [this guide](https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/) by Adrian Rosebrock.
-2. Train some DL algorithms -- super excited to train some ConvNets, CapsNets, RNNS,
+1. Install CUDA toolkit and other tools for deep learning. I will follow [this guide](https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/) by Adrian Rosebrock.
+2. Train some DL algorithms -- super excited to train some ConvNets, CapsNets, RNNs,
 LSTMs in the coming year!
