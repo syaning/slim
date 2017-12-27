@@ -21,7 +21,7 @@ I did however make some of my own modifications to Roelof's machine (e.g., GPU c
 and number of HDDs and SSDs). I also found [Tim Dettmers' blog](http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/) to be a valuable
 source of knowledge throughout this process. Below are the specs that I landed on:
 
-1. CPU - intel i7-6930k 3.5GHz
+1. CPU - intel i7-5930k 3.5GHz
 2. 1x GPU - ASUS ROG Strix GeForce GTX 1080 Ti 11GB
 3. Motherboard - ASUS X99-E WS
 4. RAM - Kingston Technology 32GB (4x8GB)
