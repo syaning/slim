@@ -325,3 +325,20 @@ hasSubsequence(List(1,2,3,4), List(2,3)) // true
 hasSubsequence(List('a','b','c','d'), List('b','c','d')) // true
 ```
 \\(\blacksquare\\)
+
+**<span style="font-size:larger;">Exercise 25.</span>**
+Write a function `size` that counts the number of nodes in a tree.
+```scala
+def size[A](t: Tree[A]): Int = t match {
+  case Leaf(_) => 1
+  case Branch(lt, rt) => 1 + size(lt) + size(rt)
+}
+
+// examples
+val myTree1: Tree[Int] = Branch(Leaf[Int](2), Leaf[Int](3))
+val myTree2: Tree[Int] = Leaf[Int](5)
+size(myTree1)
+size(myTree2)
+size(Branch(myTree1,myTree2))
+```
+\\(\blacksquare\\)
