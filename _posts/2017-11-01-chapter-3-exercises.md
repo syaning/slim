@@ -342,3 +342,57 @@ size(myTree2)
 size(Branch(myTree1,myTree2))
 ```
 \\(\blacksquare\\)
+
+**<span style="font-size:larger;">Exercise 26.</span>**
+Write a function `maximum` that returns the maximum element in a `Tree[Int]`.
+```scala
+def maximum(t: Tree[Int]): Int = t match {
+  case Leaf(v) => v
+  case Branch(lt, rt) => maximum(lt) max maximum(rt)
+}
+```
+\\(\blacksquare\\)
+
+**<span style="font-size:larger;">Exercise 27.</span>**
+Write a function `depth` that returns the maximum element path length from the
+root of a tree to any leaf.
+```scala
+def depth[A](t: Tree[A]): Int = t match {
+  case Leaf(_) => 0
+  case Branch(lt, rt) => 1 + (depth(lt) max depth(rt))
+}
+```
+\\(\blacksquare\\)
+
+**<span style="font-size:larger;">Exercise 28.</span>**
+Write a function `map`, analogous to the method of the same name on `List`, that
+modifies each element in a tree with a given function.
+```scala
+def map[A,B](t: Tree[A])(f: A => B): Tree[B] = t match {
+  case Leaf(v) => Leaf(f(v))
+  case Branch(lt, rt) => Branch(map(lt)(f), map(rt)(f))
+}
+
+\\ example
+val myTree1: Tree[Int] = Branch(Leaf[Int](2), Leaf[Int](3))
+map(myTree1)(_ + 1) \\ increment each element by one
+```
+\\(\blacksquare\\)
+
+**<span style="font-size:larger;">Exercise 29.</span>**
+Generalize `size`, `maximum`, `depth`, and `map`, writing a new function `fold`
+that abstracts over their similarities.
+```scala
+def foldRight[A,B](t: Tree[A])(z: A => B)(f: (B,B) => B): B = t match {
+  case Leaf(v) => z(v)
+  case Branch(lt, rt) => f(foldRight(lt)(z)(f), foldRight(rt)(z)(f))
+}
+
+def sizeFold[A](t: Tree[A]): Int = foldRight(t)(_ => 1)((l: Int, r: Int) => 1 + l + r)
+def maximumFold(t: Tree[Int]): Int = foldRight(t)(x => x)((x: Int, y: Int) => x max y)
+def depthFold[A](t: Tree[A]): Int = foldRight(t)(_ => 0)((l: Int, r: Int) => 1 + (l max r))
+def mapFold[A,B](t: Tree[A])(g: A => B): Tree[B] = {
+  foldRight(t)((x: A) => Leaf(g(x)): Tree[B])((l, r) => Branch(l, r))
+}
+```
+\\(\blacksquare\\)
