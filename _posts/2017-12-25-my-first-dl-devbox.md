@@ -69,8 +69,8 @@ memory chip and reinstalling it.
 for a couple of noobies -- I wonder how long this would have taken without the
 ability to look things up on the internet!)
 
-### Installing Ubuntu 16.0.4
-I opted to install Ubuntu 16.0.4 after some research, where I found out about LTS
+### Installing Ubuntu 16.04
+I opted to install Ubuntu 16.04 after some research, where I found out about LTS
 versions. Also, the guide for installing the CUDA toolkit, which I plan to follow, is also
 based on Ubuntu 16.0.4. I've installed Ubuntu just one time before this, but
 after seeing both the black/purple screen of deaths, I was quickly reminded of the
@@ -96,5 +96,12 @@ solved my sound problems!
 
 ### What's Next
 1. Install CUDA toolkit and other tools for deep learning. I will follow [this guide](https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/) by Adrian Rosebrock.
+
+**Update:** I've installed the CUDA toolkit and cuDNN library but its important
+to note that the suggested NVIDIA kernel driver (i.e., 357.26) does not work with
+with the 1080Ti. Instead I upgraded to the 384.98 and ignored the step to
+install the kernel driver but proceeded with the rest of the instructions to install
+cuda 8.0.
+
 2. Train some DL algorithms -- super excited to train some ConvNets, CapsNets, RNNs,
 LSTMs in the coming year!
