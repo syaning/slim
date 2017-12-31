@@ -96,12 +96,10 @@ solved my sound problems!
 
 ### What's Next
 1. Install CUDA toolkit and other tools for deep learning. I will follow [this guide](https://www.pyimagesearch.com/2017/09/27/setting-up-ubuntu-16-04-cuda-gpu-for-deep-learning-with-python/) by Adrian Rosebrock.
-
-**Update:** I've installed the CUDA toolkit and cuDNN library but its important
+*(**Update:** I've installed the CUDA toolkit and cuDNN library but its important
 to note that the suggested NVIDIA kernel driver (i.e., 357.26) does not work with
 with the 1080Ti. Instead I upgraded to the 384.98 and ignored the step to
 install the kernel driver but proceeded with the rest of the instructions to install
-cuda 8.0.
-
+cuda 8.0.)*
 2. Train some DL algorithms -- super excited to train some ConvNets, CapsNets, RNNs,
 LSTMs in the coming year!
