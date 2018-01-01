@@ -19,7 +19,7 @@ The hardware for my machine was mainly inspired by Roelof Pieters' custom build,
 about [here](http://graphific.github.io/posts/building-a-deep-learning-dream-machine/).
 I did however make some of my own modifications to Roelof's machine (e.g., GPU choice,
 and number of HDDs and SSDs). I also found [Tim Dettmers' blog](http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/) to be a valuable
-source of knowledge throughout this process. Below are the specs that I landed on:
+source of information throughout this process. Below are the specs that I landed on:
 
 1. CPU - intel i7-5930k 3.5GHz
 2. 1x GPU - ASUS ROG Strix GeForce GTX 1080 Ti 11GB
