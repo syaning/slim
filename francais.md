@@ -2,17 +2,13 @@
 layout: page
 title: français
 ---
+ Mon blog français où je raconte tout ce que je veux.
 
-Salut toute le monde ! J'aime bien apprendre le français par regarder des films.
-En fait, grace à Netflix, j'ai regardé:
-
-- Le Bon Dinosaur
-- Le Livre de la Jungle
-- Sens Dessus Dessous
-- Zootopia
-
-Pour tous ces films, on peux regarder avec les sous-titres [cc] qu'ils vont bien
-ensemble avec les voix. J'ai hâte de voir la film prochaine qui sera la sorte
-<< versionne Française Canadienne >> dans Netflix.
-
-Comme si de rien n'était... blab
+ <ul class="post-list">
+ 	{% for post in site.categories.french %}
+ 	<li>
+ 		<span>{{ post.date | date: "%b %d, %Y" }}</span>
+ 		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+ 	</li>
+ 	{% endfor %}
+ </ul>
