@@ -2,9 +2,12 @@
 layout: page
 title: paper_summaries
 ---
-It's easy for me to forget the contents of a paper after I've read it. And so, I've
-decided to summarize the *"Why?"*, *"How?"*, and *"What?"* of some the ones that
-I've read.
+It's easy for me to forget the contents of a paper after I've read it. In light of this,
+I thought it'd be a good idea to start summarizing the *"Why?"*, *"How?"*, and *"What?"*
+of the research papers that I come across. The point here is to write these summaries
+so that they are short enough that I wouldn't mind re-reading them on a occasional
+basis, while also being thorough enough for me to be able to recall the main arguments, methods,
+and results of the research.
 
 #### stats
 <ul class="post-list">
