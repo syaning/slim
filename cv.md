@@ -5,12 +5,8 @@ title: curriculum_vitae
 ## Val Andrei Fajardo (PhD)
 Toronto, Canada | [linkedin](https://www.linkedin.com/in/vafajardo) | [github](https://github.com/vafajardo)
 
-
-
-### Research Objective
-some text
-
 ### Research Interests
+- Statistics & Applied Probability; Reinforcment Learning; Deep Learning
 
 
 ### Skills
@@ -22,7 +18,7 @@ some text
 - **Machine Learning Scientist [integrate.ai, Oct 2017 -- present]:**
   - Build machine learning models
   - Use big data tools to discover useful insights for clients
-  - Research and explore recent machine learning and deep learning techniques
+  - Research and explore recent machine/deep learning techniques
 
 - **Senior Data Scientist [Precima-LoyaltyOne, Jan 2016 -- Sept 2017]:**
   - Developed & implemented pricing models for large retailer clients
@@ -67,7 +63,7 @@ some text
 - **Awards:**
   - Departmental Chair Awards for outstanding academic/research performance [University of
   Waterloo, 4 separate occasions within 2011-2015]
-  - Governor General Gold Medal Award [Brock University, 2011]
+  - [Governor General Gold Medal Award [Brock University, 2011]](https://brocku.ca/brock-news/2011/06/lifetime-of-loving-math-leads-to-convocation-medal/)
   - Distinction in Mathematics Award [Brock University, 2009]
   - Roslyn and John Reed Book Prize [Brock University, 2009]
 
@@ -87,6 +83,4 @@ some text
   - V.A. FAJARDO, P.J. LEBLANC, & V.A. FAJARDO (2017). Trace lithium in Texas tap water is negatively associated with all-cause mortality and premature death. Applied Physiology, Nutrition, and Metabolism, (ja).
 
 
-### Presentations
-
-#### PhD Dissertation Abstract
+### Conference Presentations

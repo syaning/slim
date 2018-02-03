@@ -58,6 +58,3 @@ $$\delta_t = ||w_t - w_t'||$$.
 - **Theorems 4 and 5**: Both use Lemmas 4 and 5 to stipulate that
 the algorithms found in Algorithms 1 and 2 both ensure $$\epsilon$$-differential
 privacy.
-
-
-#### **_After reading this paper, I want to learn about:_**
