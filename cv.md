@@ -6,7 +6,7 @@ title: curriculum_vitae
 Toronto, Canada | [linkedin](https://www.linkedin.com/in/vafajardo) | [github](https://github.com/vafajardo)
 
 ### Research Interests
-- Statistics & Applied Probability; Reinforcment Learning; Deep Learning
+- Statistics & Applied Probability; Reinforcment Learning; Deep Learning; Representation Learning
 
 
 ### Skills
