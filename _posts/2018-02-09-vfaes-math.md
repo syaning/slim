@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "the_variational_fair_autoencoder--doing_the_math"
+title:  "VFAE_doing_the_math"
 date: 2018-02-09
 comments: true
 categories: ML
