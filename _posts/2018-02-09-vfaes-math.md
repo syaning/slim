@@ -1,13 +1,15 @@
 ---
 layout: post
 title:  "the_variational_fair_autoencoder--doing_the_math"
-date: 2018-02-02
+date: 2018-02-09
 comments: true
 categories: ML
 ---
 <!-- ![vfae-graph]({{site.url}}/images/vfae-graph.png) -->
 In this post, I derive some of the key mathematical formulas found in the [variational
-fair autoencoder paper](https://arxiv.org/pdf/1511.00830.pdf).
+fair autoencoder paper](https://arxiv.org/pdf/1511.00830.pdf) (see also my summary
+of this paper [here]({{ site.baseurl }}{% post_url 2018-02-02-zemel-et-al-2016 %})).
+
 
 #### Equation (1)
 This equation provides the expected lower bound of the conditional log-likelihood
