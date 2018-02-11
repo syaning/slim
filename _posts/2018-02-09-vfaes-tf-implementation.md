@@ -13,7 +13,7 @@ Some links to VFAE material:
 
 In today's post, I briefly go over my [tensorflow implementation](https://github.com/vafajardo/research/blob/master/autoencoders/vfae.py)
 of a VFAE that I use to find a latent representation of the MNIST handwritten digits dataset. I should
-note that in my example, I don't have any "actual" nuisance/sensitive variables in mind;
+note that in my example, I don't have any actual nuisance/sensitive variables in mind;
 moreover, that I am simply training on this dataset to determine if indeed
 the decoder $$p_\theta(x|z_1,s)$$ is able to produce recognizable images given a randomly
 sampled $$z_1$$ and true values of the sensitive variables $$s$$.
@@ -52,7 +52,7 @@ outputs).
 5. **ELB**: This tensorflow node computes the expected lower bound of the conditional
 log-likelihood (i.e., see equation (5) in the original paper).
 6. **random_normal**: These nodes are used to sample $$\epsilon$$ from the standard
-normal distribution which are then applied to $$\mu + \sigma\epsilon$$ in order
+normal distribution which are then applied to the $$\mu + \sigma\epsilon$$ mapping in order
 to sample from the appropriate normal distributions (i.e., $$z_1$$, $$z_2$$,
 and $$z_1$$ again) -- this transformation is what allows the facilitation of the
 backpropogation technique and is known as the reparametrization trick.
@@ -66,7 +66,7 @@ this posterior.
 and take some true values of $$s$$ from some test images (i.e., recall the
 assumption of independence between $$z_1$$ and $$s$$), and pass this pair of
 variables to the **Z1_encoder** stage and subsequently onto to next stages that follow.
-I also pass in a tensorflow boolean variable so that $$y$$ is imputed from $$$q_\phi(y|z_1)$$.
+I also pass in a tensorflow boolean variable so that $$y$$ is imputed from $$q_\phi(y|z_1)$$.
 - In subsequent prediction task, I would supply $$(x\setminus s, s)$$ to $$X_encoder$$
 and can either sample from the encoder $$q_\phi(z_1 | x,s)$$ or use the mean
 as the latent representation.
