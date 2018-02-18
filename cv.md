@@ -11,7 +11,7 @@ Toronto, Canada | [linkedin](https://www.linkedin.com/in/vafajardo) | [github](h
 
 ### Skills
 - **Technical skills:**
-  - Programming Languages/Tools: Python, R, Scala, Spark, SQL, Cython, TensorFlow
+  - Programming Languages/Tools: Python, R, Scala, PySpark, SQL, TensorFlow, Cython
   - Mathematics: Probability & Statistics, Linear Algebra, Calculus, Optimization
 
 ### Work Experience
