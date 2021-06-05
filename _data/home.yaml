@@ -1,0 +1,17 @@
+- title: about
+  content: >
+    [slim](https://github.com/syaning/slim){:_blank}
+    is a simple and beautiful jekyll theme, it has only
+    the essential functions so that you can concentrate
+    on the content of your blog. It's under MIT license.
+- title: posts
+  content: >
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>

@@ -2,11 +2,17 @@
 layout: page
 title:  Archives
 ---
-<ul class="post-list">
-	{% for post in site.posts %}
-	<li>
-		<time>{{ post.date | date: "%b %d, %Y" }}</time>
-		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	</li>
-	{% endfor %}
-</ul>
+
+{% for post in site.posts %}
+  {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+  {% if currentyear != year %}
+     <h2>{{ currentyear }}</h2>
+    {% capture year %}{{currentyear}}{% endcapture %} 
+  {% endif %}
+  <ul class="posts-list">
+    <li>
+      <time>{{ post.date | date: "%b %d, %Y" }}</time>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+  </ul>
+{% endfor %}
