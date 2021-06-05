@@ -13,5 +13,6 @@ permalink: pretty
 google_analytics: 
 disqus_shortname: 
 
-# Utils
-mathjax: true
+exclude:
+  - LICENSE
+  - README.md
