@@ -1,7 +1,7 @@
 # Site settings
 title: slim
 baseurl: "/slim"
-url: "http://syaning.com"
+url: "https://syaning.github.io"
 
 # Build settings
 kramdown:

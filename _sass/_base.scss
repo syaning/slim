@@ -9,6 +9,10 @@ dl, dd, ol, ul, figure {
 }
 
 
+p {
+    text-align: justify;
+}
+
 
 /**
  * Basic styling
@@ -18,7 +22,6 @@ body {
     color: $text-color;
     background-color: $background-color;
 }
-
 
 
 /**
@@ -32,7 +35,6 @@ ul, ol, dl, figure, table,
 }
 
 
-
 /**
  * Images
  */
@@ -40,7 +42,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
 
 
 /**
@@ -53,7 +54,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
 
 
 /**
@@ -71,14 +71,12 @@ li {
 }
 
 
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
-
 
 
 /**
@@ -92,7 +90,6 @@ a {
         text-decoration: underline;
     }
 }
-
 
 
 /**
@@ -111,18 +108,18 @@ blockquote {
 }
 
 
-
 /**
  * Code formatting
  */
 pre,
 code {
-    background-color: #fcfcfc;
+    background-color: $code-background;
 }
 
 code {
     padding: 1px 5px;
     font-family: $code-font-family;
+    color: $code-color;
 }
 
 pre {
@@ -137,7 +134,6 @@ pre {
         tab-size: 4;
     }
 }
-
 
 
 /**
@@ -180,7 +176,6 @@ hr {
 }
 
 
-
 /**
  * Clearfix
  */
@@ -191,7 +186,6 @@ hr {
         clear: both;
     }
 }
-
 
 
 /**
