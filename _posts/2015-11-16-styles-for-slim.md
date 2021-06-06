@@ -60,3 +60,5 @@ func main() {
 MathJax support:
 
 $$ a^2 + b^2 = c^2 $$
+
+And inline MathJax: $ a^2 + b^2 = c^2 $
