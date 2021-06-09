@@ -9,7 +9,7 @@ title:  Archives
      <h2>{{ currentyear }}</h2>
     {% capture year %}{{currentyear}}{% endcapture %} 
   {% endif %}
-  <ul class="posts-list">
+  <ul class="post-list">
     <li>
       <time>{{ post.date | date: "%b %d, %Y" }}</time>
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
