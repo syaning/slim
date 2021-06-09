@@ -6,7 +6,7 @@ title:  Archives
 {% for post in site.posts %}
   {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
   {% if currentyear != year %}
-     <h2>{{ currentyear }}</h2>
+    <h2>{{ currentyear }}</h2>
     {% capture year %}{{currentyear}}{% endcapture %} 
   {% endif %}
   <ul class="post-list">
