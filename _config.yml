@@ -1,7 +1,7 @@
 # Site settings
-title: slim
-baseurl: "/slim"
-url: "https://syaning.github.io"
+title: Personal Website
+baseurl: "/"
+url: "https://monocrs.github.io"
 
 # Build settings
 kramdown:
