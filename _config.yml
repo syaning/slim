@@ -1,5 +1,5 @@
 # Site settings
-title: Personal Website
+title: "Hello, World!""
 baseurl: "/"
 url: "https://monocrs.github.io"
 
@@ -10,4 +10,4 @@ permalink: pretty
 
 # Third-party services
 # just leave blank to disable it
-google_analytics: 
+google_analytics: "G-6G7WTK39CF"

@@ -1,7 +1,13 @@
-# slim
+# ali.eco
 
-slim is just a slim jekyll theme. [Demo](https://syaning.github.io/slim/).
+#### My personal website.
 
-### License
+Powered by:
+[![Jekyll](/assets/icons/jekyll-logo.png)](https://jekyllrb.com/)
+
+Theme:
+[Slim](https://github.com/syaning/slim)
+
+#### License
 
 MIT
